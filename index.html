@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="/js/main.js"></script>
+    <title>REAL Travel</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+				<ul>
+					<li><a href="#about">О НАС</a></li>
+					<li><a href="#shablons">ШАБЛОНЫ ПУТЕШЕСТВИЯ</a></li>
+					<li><a href="#price">СТОИМОСТЬ</a></li>
+					<li><button class="button-auth">РЕГИСТРАЦИЯ</button></li>
+				</ul>
+			</nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+				<div class="col-12">
+					<div class="main-block">	
+						<div class="main-block-title">
+							Планируй свои путешествия
+						</div>
+						<div class="main-block-descr">
+							Или выбери наш шаблон
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+    
+    <section class="content">
+        <div class="container" id="about">
+            <div class="info">
+                <div class="info-header">
+                    <div class="info" >
+                        <div class="info-header">
+                            <div class="info-header-tab">Планируй</div>
+                            <div class="info-header-tab">Отдыхай</div>
+                            <div class="info-header-tab">Выгода</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-tabcontent fade">
+					<div class="description">
+						<div class="description-title">Планируй свой маршрут</div>
+						<div class="description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ipsam ut, quae in, beatae eligendi veritatis dolorem eius, unde reiciendis sapiente architecto itaque. Quasi delectus omnis officiis, adipisci maiores cum?<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium similique excepturi sed aliquid corporis rem repudiandae magni iste molestiae consequatur, architecto eum saepe, temporibus iusto nisi aspernatur accusantium vel tempore.
+						</div>
+						<div class="description-btn more">
+							Узнать подробнее
+						</div>
+					</div>
+					<div class="photo">
+						<img src="img/plan.jpg" alt="Massage">
+					</div>
+                </div>
+                <div class="info-tabcontent fade">
+					<div class="description">
+						<div class="description-title">Отдыхай</div>
+						<div class="description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ipsam ut, quae in, beatae eligendi veritatis dolorem eius, unde reiciendis sapiente architecto itaque. Quasi delectus omnis officiis, adipisci maiores cum?<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium similique excepturi sed aliquid corporis rem repudiandae magni iste molestiae consequatur, architecto eum saepe, temporibus iusto nisi aspernatur accusantium vel tempore.
+						</div>
+						<div class="description-btn more">
+							Узнать подробнее
+						</div>
+					</div>
+					<div class="photo">
+						<img src="img/plan.jpg" alt="Massage">
+					</div>
+                </div>
+                <div class="info-tabcontent fade">
+					<div class="description">
+						<div class="description-title">Выгодно</div>
+						<div class="description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ipsam ut, quae in, beatae eligendi veritatis dolorem eius, unde reiciendis sapiente architecto itaque. Quasi delectus omnis officiis, adipisci maiores cum?<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium similique excepturi sed aliquid corporis rem repudiandae magni iste molestiae consequatur, architecto eum saepe, temporibus iusto nisi aspernatur accusantium vel tempore.
+						</div>
+						<div class="description-btn more">
+							Узнать подробнее
+						</div>
+					</div>
+					<div class="photo">
+						<img src="img/plan.jpg" alt="Massage">
+					</div>
+				</div>
+            </div>
+		</div>
+		
+		<div class="shablons" id="shasblons">
+			<h1>Наши шаблоны</h1>
+		</div>
+	</section>
+
+	
+	
+
+
+
+<!-- START Modal -->
+  <div class="modal-auth">
+	<div class="modal-dialog modal-dialog-auth">
+	  <button class="close-auth">&times;</button>
+	  <form id="logInForm">
+		<fieldset class="modal-body">
+		  <legend class="modal-title">Авторизация</legend>
+		  <label class="label-auth">
+			<span>Логин</span>
+			<input id="login" type="text" />
+		  </label>
+		  <label class="label-auth">
+			<span>Пароль</span>
+			<input id="password" type="password" />
+		  </label>
+		</fieldset>
+	
+		<div class="modal-footer">
+		  <div class="footer-buttons">
+			<button class="button button-primary button-login" type="submit">
+			  Войти
+			</button>
+		  </div>
+		</div>
+	  </form>
+	  
+	</div>
+	</div>
+	<!-- /.modal-dialog -->
+</body>
+</html>
