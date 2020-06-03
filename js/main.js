@@ -53,3 +53,6 @@ function toggleModalAuth() {
     loginInput.placeholder = '';
 }
 
+
+
+buttonAuth.addEventListener('click',() => toggleModalAuth());
