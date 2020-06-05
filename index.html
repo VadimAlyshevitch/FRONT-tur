@@ -1,170 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet"> -->
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="/js/main.js"></script>
-    <title>REAL Travel</title>
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <nav>
-				<ul>
-					<li><a href="#about">О НАС</a></li>
-					<li><a href="#shablons">ШАБЛОНЫ ПУТЕШЕСТВИЯ</a></li>
-					<li><a href="#price">СТОИМОСТЬ</a></li>
-					<li><a class="button-auth">РЕГИСТРАЦИЯ</a></li>
-				</ul>
-			</nav>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REAL Travel — планирование индивидуальных путешествий</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+  </head>
 
-    <section class="main">
-        <div class="container">
-            <div class="row">
-				<div class="col-12">
-					<div class="main-block">	
-						<div class="main-block-title">
-							Планируй свои путешествия
-						</div>
-						<div class="main-block-descr">
-							Или выбери наш шаблон
-						</div>
-					</div>
-				</div>
-			</div>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav>
+          <ul>
+            <li><a href="#about">О НАС</a></li>
+					  <li><a href="#shablons">ШАБЛОНЫ</a></li>
+					  <li><a href="#price">СТОИМОСТЬ</a></li>
+          </ul>
+        </nav>
+       
+      
+        <div class="buttons">
+          <span class="user-name"></span>
+          <button class="button button-primary button-auth">
+            <span class="button-auth-svg"></span>
+            <span class="button-text">Войти</span>
+          </button>
+        
+          <button class="button button-primary button-out">
+            <span class="button-text">Выйти</span>
+            <span class="button-out-svg"></span>
+          </button>
         </div>
-    </section>
-    
-    <section class="content">
-        <div class="container" id="about">
-            <div class="info">
-                <div class="info-header">
-                    <div class="info" >
-                        <div class="info-header">
-                            <div class="info-header-tab">Планируй</div>
-                            <div class="info-header-tab">Отдыхай</div>
-                            <div class="info-header-tab">Выгода</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="info-tabcontent fade">
-					<div class="description">
-						<div class="description-title">Планируй свой маршрут</div>
-						<div class="description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ipsam ut, quae in, beatae eligendi veritatis dolorem eius, unde reiciendis sapiente architecto itaque. Quasi delectus omnis officiis, adipisci maiores cum?<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium similique excepturi sed aliquid corporis rem repudiandae magni iste molestiae consequatur, architecto eum saepe, temporibus iusto nisi aspernatur accusantium vel tempore.
-						</div>
-						<div class="description-btn more">
-							Узнать подробнее
-						</div>
-					</div>
-					<div class="photo">
-						<img src="img/plan.jpg" alt="Massage">
-					</div>
-                </div>
-                <div class="info-tabcontent fade">
-					<div class="description">
-						<div class="description-title">Отдыхай</div>
-						<div class="description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ipsam ut, quae in, beatae eligendi veritatis dolorem eius, unde reiciendis sapiente architecto itaque. Quasi delectus omnis officiis, adipisci maiores cum?<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium similique excepturi sed aliquid corporis rem repudiandae magni iste molestiae consequatur, architecto eum saepe, temporibus iusto nisi aspernatur accusantium vel tempore.
-						</div>
-						<div class="description-btn more">
-							Узнать подробнее
-						</div>
-					</div>
-					<div class="photo">
-						<img src="img/plan.jpg" alt="Massage">
-					</div>
-                </div>
-                <div class="info-tabcontent fade">
-					<div class="description">
-						<div class="description-title">Выгодно</div>
-						<div class="description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ipsam ut, quae in, beatae eligendi veritatis dolorem eius, unde reiciendis sapiente architecto itaque. Quasi delectus omnis officiis, adipisci maiores cum?<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium similique excepturi sed aliquid corporis rem repudiandae magni iste molestiae consequatur, architecto eum saepe, temporibus iusto nisi aspernatur accusantium vel tempore.
-						</div>
-						<div class="description-btn more">
-							Узнать подробнее
-						</div>
-					</div>
-					<div class="photo">
-						<img src="img/plan.jpg" alt="Massage">
-					</div>
-				</div>
+      </header>
+    </div>
+    <!-- /.container  -->
+
+    <main class="main">
+      <div class="container">
+        <section class="prewiew">
+          <div class="container">
+              <div class="row">
+          <div class="col-12">
+            <div class="main-block">	
+              <div class="main-block-title">
+                Планируй свои путешествия
+              </div>
+              <div class="main-block-descr">
+                Или выбери наш шаблон
+              </div>
             </div>
-		</div>
-		
-		<div class="shablons" id="shasblons">
-			<h1>Наши шаблоны</h1>
-		</div>
-	</section>
+          </div>
+        </div>
+          </div>
+      </section>
 
-	
-	
-<!---START FOOTER--->
+        <section class="restaurants">
+          <div class="section-heading">
+            <h2 class="prew-title">Шаблоны путешествий</h2>
+           
+          </div>
+          <div class="cards cards-restaurants"></div>
+          <!-- /.cards -->
+        </section>
+        <section class="menu hide">
+          <div class="section-heading">
+            <h2 class="section-title restaurant-title">Пицца Плюс</h2>
+            <div class="card-info">
+              <div class="rating">
+                4.5
+              </div>
+              <div class="price">От 900 ₽</div>
+              <div class="category">Пицца</div>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <div class="cards cards-menu"></div>
+          <!-- /.cards -->
+        </section>
+      </div>
+      <!-- /.container -->
+    </main>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-block">
+          
+        
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><img src="img/social/instagram.svg" alt="instagram"
+            /></a>
+            <a href="#" class="social-link"
+              ><img src="img/social/fb.svg" alt="facebook"
+            /></a>
+            <a href="#" class="social-link"
+              ><img src="img/social/vk.svg" alt="vk"
+            /></a>
+          </div>
+          <!-- /.social-links -->
+        </div>
+        <!-- /.footer-block -->
+      </div>
+    </footer>
 
+    <div class="modal modal-cart">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 class="modal-title">Корзина</h3>
+          <button class="close">&times;</button>
+        </div>
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
 
-
-<!---END FOOTER--->
-
-<footer class="footer">
-	<div class="container">
-	  <div class="footer-block">
-		
-		<nav class="footer-nav">
-		  <a href="#" class="footer-link">О нас </a>
-		  <a href="#" class="footer-link">Шаблоны путешествия</a>
-		  <a href="#" class="footer-link">Стоимость</a>
-		  
-		</nav>
-		<div class="social-links">
-		  <a href="#" class="social-link"
-			><img src="img/social/instagram.svg" alt="instagram"
-		  /></a>
-		  <a href="#" class="social-link"
-			><img src="img/social/fb.svg" alt="facebook"
-		  /></a>
-		  <a href="#" class="social-link"
-			><img src="img/social/vk.svg" alt="vk"
-		  /></a>
-		</div>
-		<!-- /.social-links -->
-	  </div>
-	  <!-- /.footer-block -->
-	</div>
-  </footer>
-
-
-<!-- START Modal -->
-  <div class="modal-auth">
-	<div class="modal-dialog modal-dialog-auth">
-	  <button class="close-auth">&times;</button>
-	  <form id="logInForm">
-		<fieldset class="modal-body">
-		  <legend class="modal-title">Авторизация</legend>
-		  <label class="label-auth">
-			<span>Логин</span>
-			<input id="login" type="text" />
-		  </label>
-		  <label class="label-auth">
-			<span>Пароль</span>
-			<input id="password" type="password" />
-		  </label>
-		</fieldset>
-	
-		<div class="modal-footer">
-		  <div class="footer-buttons">
-			<button class="button button-primary button-login" type="submit">
-			  Войти
-			</button>
-		  </div>
-		</div>
-	  </form>
-	  
-	</div>
-	</div>
-	<!-- /.modal-dialog -->
-</body>
+    <div class="modal-auth">
+      <div class="modal-dialog modal-dialog-auth">
+        <button class="close-auth">&times;</button>
+        <form id="logInForm">
+          <fieldset class="modal-body">
+            <legend class="modal-title">Авторизация</legend>
+            <label class="label-auth">
+              <span>Логин</span>
+              <input id="login" type="text" />
+            </label>
+            <label class="label-auth">
+              <span>Пароль</span>
+              <input id="password" type="password" />
+            </label>
+          </fieldset>
+          <!-- /.modal-body -->
+          <div class="modal-footer">
+            <div class="footer-buttons">
+              <button class="button button-primary button-login" type="submit">
+                Войти
+              </button>
+            </div>
+          </div>
+        </form>
+        <!-- /.modal-footer -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

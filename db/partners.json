@@ -1,55 +1,55 @@
 [
   {
-    "name": "Пицца Плюс",
+    "name": "Польша",
     "time_of_delivery": 50,
     "stars": 4.5,
     "price": 900,
-    "kitchen": "Пицца",
+    "kitchen": "Европа",
     "image": "img/pizza-plus/preview.jpg",
     "products": "pizza-plus.json"
   },
   {
-    "name": "Тануки",
+    "name": "Испания",
     "time_of_delivery": 60,
     "stars": 4.3,
     "price": 1200,
-    "kitchen": "Суши, роллы",
+    "kitchen": "Европа",
     "image": "img/tanuki/preview.jpg",
     "products": "tanuki.json"
   },
   {
-    "name": "FoodBand",
+    "name": "Италия",
     "time_of_delivery": 40,
     "stars": 4.4,
     "price": 450,
-    "kitchen": "Пицца",
+    "kitchen": "Европа",
     "image": "img/food-band/preview.jpg",
     "products": "food-band.json"
   },
   {
-    "name": "Палки скалки",
+    "name": "США",
     "time_of_delivery": 55,
     "stars": 4.1,
     "price": 500,
-    "kitchen": "Пицца",
+    "kitchen": "Сев.Америка",
     "image": "img/palki-skalki/preview.jpg",
     "products": "palki-skalki.json"
   },
   {
-    "name": "Гуси Лебеди",
+    "name": "Германия",
     "time_of_delivery": 75,
     "stars": 4.7,
     "price": 1000,
-    "kitchen": "Русская кухня",
+    "kitchen": "Европа",
     "image": "img/gusi-lebedi/preview.jpg",
     "products": "gusi-lebedi.json"
   },
   {
-    "name": "PizzaBurger",
+    "name": "Россия",
     "time_of_delivery": 45,
     "stars": 4.6,
     "price": 700,
-    "kitchen": "Пицца",
+    "kitchen": "Евразия",
     "image": "img/pizza-burger/preview.jpg",
     "products": "pizza-burger.json"
   }
