@@ -11,6 +11,7 @@ const modal = document.querySelector('.modal'),
       loginInput = document.querySelector('#login'),
       userName = document.querySelector('.user-name'),
       buttonOut = document.querySelector('.button-out');
+      
 
 function hideTabContent(a) {
     for (let i = a; i < tabContent.length; i++) {
@@ -53,6 +54,5 @@ function toggleModalAuth() {
     loginInput.placeholder = '';
 }
 
-
-
 buttonAuth.addEventListener('click',() => toggleModalAuth());
+closeAuth.addEventListener('click', () => toggleModalAuth());
