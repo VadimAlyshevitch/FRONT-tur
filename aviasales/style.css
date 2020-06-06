@@ -166,6 +166,9 @@ input {
   background: 50% 50%/100% no-repeat url(img/plane.svg);
   margin-left: 2px;
 }
+.button__input {
+  
+}
 
 .left-side,
 .right-side {
@@ -307,4 +310,37 @@ input {
 .input {
   position: relative;
   z-index: 1;
+}
+
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.input-price {
+  display: flex;
+  flex-flow: column;
+  margin: 20px auto;
+  margin-bottom: 20px;
+
+}
+.input-price input {
+  -webkit-appearance: none;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 60px;
+    line-height: 2.25rem;
+    padding: 9px 18px;
+    position: relative;
+    -webkit-transition: border-radius 0.3s, width 0.3s;
+    -o-transition: border-radius 0.3s, width 0.3s;
+    transition: border-radius 0.3s, width 0.3s;
+    -webkit-box-shadow: inset 0 0 0 2px transparent;
+    box-shadow: inset 0 0 0 2px transparent;
+    z-index: 1;
+    width: 100%;
+    border-radius: inherit;
+    color: inherit;
+    background-color: #1e3c53;
 }
