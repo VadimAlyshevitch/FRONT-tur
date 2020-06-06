@@ -32,8 +32,7 @@ const rating = document.querySelector('.rating'),
 
 let login = localStorage.getItem('delivery');
 
-// корзина
-const bag = []
+
 
 const getData = async function (url) {
   const response = await fetch(url);
@@ -228,83 +227,6 @@ function openGoods(event) {
   }
 }
 
-// function addToBag(event) {
-//   const target = event.target;
-//   const buttonAddToBag = target.closest('.button-add-cart');
-
-//   if(buttonAddToBag) {
-//     const card = target.closest('.card');
-//     const title = card.querySelector('.card-title-reg').textContent;
-//     const price = card.querySelector('.card-price-bold').textContent;
-//     const id = buttonAddToBag.id;
-// // поиск на совпадения
-//     const food = bag.find(function(item) {
-//       return item.id === id;
-//     })
-
-//     if(food) {
-//       food.count += 1;
-//     } else {
-//       bag.push({
-//         id : id,
-//         title : title,
-//         price : price,
-//         count : 1
-//       });
-//     }
-// // конец поиск на совпадения 
-//    // console.log(title,  price, id)
-//   }
-// };
-
-// function renderCart( ) {
-//   modalBody.textContent = '';
-//   bag.forEach((item) => {
-//     const itemBag = `          
-//       <div class="food-row">
-//         <span class="food-name">${item.title}</span>
-//         <strong class="food-price">${item.price}</strong>
-//         <div class="food-counter">
-//           <button class="counter-button button-minus" data-id=${item.id}>-</button>
-//           <span class="counter">${item.count}</span>
-//           <button class="counter-button button-plus" data-id=${item.id}>+</button>
-//         </div>
-//       </div>`;
-
-//       modalBody.insertAdjacentHTML('beforebegin', itemBag);
-
-//       const totalPrice = bag.reduce((result, item)=> {
-//           return result + (parseFloat(item.price) * item.count); // преобразование строки в число с помощью parseFloat
-//       }, 0);
-
-//       modalPricetag.textContent = totalPrice + ' ₽';
-//   })
-// }
-
-// function changeCount(event) {
-//   const target = event.target;
-
-//   if(target.classList.contains('counter-button')){
-//     const food = bag.find(function(item) {
-//       return item.id === target.dataset.id
-//     });
-
-//     if(target.classList.contains('button-minus')) {
-//       food.count--; 
-//       console.log('click minus')
-//    };
-//    if(target.classList.contains('button-plus')) {
-//      food.count++;
-//    };
-//     renderCart();
-//   }
-// }
-
-// buttonMinus.addEventListener('click' , event => {
-//   const target = event.target;
-
-//   console.log('push minus')
-// })
 
 
 
@@ -313,25 +235,10 @@ function init() {
     data.forEach(createCardRestaurant);
   });
 
-  // cartButton.addEventListener('click',() => {
-  //   // renderCart()
-  //   toggleModal();
-  // } );
-
-  // modalBody.addEventListener('click' , changeCount);
-
-  // cardsMenu.addEventListener('click', addToBag);
 
   closer.addEventListener('click', toggleModal);
 
   cardsRestaurants.addEventListener('click', openGoods);
-
-  // logo.addEventListener('click', () => {
-  //   //containerPromo.classList.remove('hide');
-  //   restaurants.classList.remove('hide');
-  //   menu.classList.add('hide');
-  // });
-
   checkAuth();
 
   new Swiper('.swiper-container', {
