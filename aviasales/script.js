@@ -22,7 +22,7 @@ const CITY_API = 'http://api.travelpayouts.com/data/ru/cities.json',
 
 let city = [];
 
-// --- функции
+
 const getData = (url, callback, reject = console.error) => {
 	try {
 
@@ -188,7 +188,7 @@ const renderCheap = (data, date) => {
 	renderCheapYear(cheapTicketYear)
 }
 
-// --- обработчики событий
+
 inputCitiesFrom.addEventListener('input', () => {
 	showCity(inputCitiesFrom, dropdownCitiesFrom)
 });
@@ -235,7 +235,7 @@ formSearch.addEventListener('submit', (event) => {
 })
 
 
-// --- вызовы функций
+
 getData(PROXY + CITY_API, (data) => {
 	// выбираем только те объекты у которых не пустое поле name
 	city = JSON.parse(data).filter(item => item.name);
