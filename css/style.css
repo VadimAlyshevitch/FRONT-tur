@@ -146,9 +146,9 @@ button {
 .main-block {
     width: 750px;
     min-height: 300px;
-    margin: 0 auto;
+    
     padding: 170px;
-    text-align: center;
+    
 }
 .input {
     background-color: #ffffff;
