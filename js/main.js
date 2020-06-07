@@ -124,7 +124,7 @@ function createCardRestaurant({
   price,
   stars,
   products,
-  time_of_delivery: timeOfDelivery,
+  
 }) {
   const card = `
       <a class="card card-restaurant" data-products="${products}">
@@ -132,7 +132,7 @@ function createCardRestaurant({
         <div class="card-text">
           <div class="card-heading">
             <h3 class="card-title">${name}</h3>
-            <span class="card-tag tag">${timeOfDelivery} мин</span>
+            
           </div>
           <div class="card-info">
             <div class="rating">
@@ -171,10 +171,10 @@ function createCardGood({ description, image, name, price, id }) {
           </div>
           <div class="card-buttons">
             <button class="button button-primary button-add-cart" id="${id}">
-              <span class="button-card-text">В корзину</span>
-              <span class="button-cart-svg"></span>
+              <span class="button-card-text">Сохранить</span>
+              
             </button>
-            <strong class="card-price-bold">${price} ₽</strong>
+            <strong class="card-price-bold">Итого: ${price} ₽</strong>
           </div>
         </div>
   `
