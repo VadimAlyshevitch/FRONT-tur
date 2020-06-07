@@ -380,6 +380,10 @@ button {
 
 }
 
+.button-add-cart {
+    background-color: rgb(53, 50, 219);
+}
+
 .card-restaurant {
     cursor: pointer
 }
