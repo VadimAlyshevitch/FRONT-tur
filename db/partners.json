@@ -15,7 +15,7 @@
     "price": 60000,
     "kitchen": "Европа",
     "image": "img/tanuki/preview.jpg",
-    "products": "tanuki.json"
+    "products": "spanish.json"
   },
   {
     "name": "Италия",
@@ -24,7 +24,7 @@
     "price": 60000,
     "kitchen": "Европа",
     "image": "img/food-band/preview.jpg",
-    "products": "food-band.json"
+    "products": "itali.json"
   },
   {
     "name": "США",
@@ -33,7 +33,7 @@
     "price": 80000,
     "kitchen": "Сев.Америка",
     "image": "img/palki-skalki/preview.jpg",
-    "products": "palki-skalki.json"
+    "products": "usa.json"
   },
   {
     "name": "Германия",
